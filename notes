@@ -1,0 +1,43 @@
+Skatepark finder 
+
+
+Elements:
+    name: string,
+    type: string, (eg. rail, ramp, pyramid, board, bowl)
+    level: string (eg. sloped, flat, egg (bowl), kidney (bowl))
+
+
+Spots:
+    name: string,
+    type: string
+    longitude: text,
+    latitude: text,
+    material: string,
+    design: string,
+
+User:
+    name: string,
+    username: string,
+    password: password_digest
+    birthday: datetime
+    sport: string (eg. skateboard, aggressive inline skating, razor, wheelchair, bmx)
+
+
+
+
+-insert  seed data for "skateparks" and "items" 
+-skateparks have many items 
+-{skatparks:
+    id: float,
+    name: string,
+    longitude: text,
+    latitude: text,
+    items: item_id,
+}
+-items belong to many skateparks
+-{item:
+    name: string,
+    type: string,
+
+
+}
